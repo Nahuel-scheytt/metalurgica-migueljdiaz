@@ -17268,29 +17268,28 @@ template {
   
   @media (min-width: 768px) {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
   }
   .menu-container {
-    width: 100%;
     position: relative;
 
     ul {
-      position: absolute;
-      top: 0px;
       background-color: white;
-      z-index: 2;
-      transform: translateY(-150%);
-      transition: transform 0.4s ease-in 0s;
-      clear: both;
-      list-style: none;
       width: 100%;
       padding: 0;
       margin: 0;
+      list-style: none;
+      position: absolute;
+      top: 5px;
+      transform: translateY(-150%);
+      transition: transform 0.4s ease-in 0s;
+      z-index: 2;
+      clear: both;
 
       @media (min-width: 768px) {
         background-color: transparent;
         display: flex;
-        width: 100%;
         position: relative;
         transform: translateY(0);
         top: 0;
@@ -17305,10 +17304,8 @@ template {
           }
         }
 
-        padding-left: 0px;
-        padding-right: 0px;
-        flex-grow: 1;
-        flex-basis: 0;
+        padding-left: 15px;
+        padding-right: 15px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -17325,7 +17322,7 @@ template {
           -webkit-font-smoothing: antialiased;
           text-decoration: none;
           color: black;
-          line-height: 50px;
+          line-height: 60px;
           font-size: 14px;
           transition: color 0.4s ease-in 0s;
           white-space: nowrap;
@@ -17340,6 +17337,7 @@ template {
       }
     }
   }
+  
 }
 
 
@@ -17409,7 +17407,7 @@ template {
 
     &:hover {
       .hamburger,
-      &:before,s
+      &:before,
       &:after {
         background-color: white;
         /*all is applied in custom-menu.toggled as well - otherwise background-color could be used instead of all*/

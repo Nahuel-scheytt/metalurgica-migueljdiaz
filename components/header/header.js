@@ -22,38 +22,38 @@ export default function Header() {
             </button>
           </div>
 
-          <Link href="/">
-            <a className={styles.navbarBrand}>Metalurgica Miguel J Diaz</a>
-          </Link>
+          {!isMobile && (
+            <Link href="/">
+              <a className={styles.navbarBrand}>Metalúrgica Miguel J Diaz</a>
+            </Link>
+          )}
 
           <div className="menu-container">
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Nosotros</a></li>
-              <li><a href="#">Contacto</a></li>
+              <li className={styles.navItem}>
+                <Link href="/">
+                  <a className={styles.navLink}>Productos</a>
+                </Link>
+              </li>
+              <li className={styles.navItem}>
+                <Link href="/">
+                  <a className={styles.navLink}>Nosotros</a>
+                </Link>
+              </li>
+              <li className={styles.navItem}>
+                <Link href="/">
+                  <a className={styles.navLink}>Contacto</a>
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
 
-        {/* {!isMobile && (
-          <ul className={styles.navbar}>
-            <li className={styles.navItem}>
-              <Link href="/">
-                <a className={styles.navLink}>Productos</a>
-              </Link>
-            </li>
-            <li className={styles.navItem}>
-              <Link href="/">
-                <a className={styles.navLink}>Nosotros</a>
-              </Link>
-            </li>
-            <li className={styles.navItem}>
-              <Link href="/">
-                <a className={styles.navLink}>Contacto</a>
-              </Link>
-            </li>
-          </ul>
-        )} */}
+        {isMobile && (
+          <Link href="/">
+            <a className={styles.navbarBrandMobile}>M</a>
+          </Link>
+        )}
       </Nav>
     </header>
   )
