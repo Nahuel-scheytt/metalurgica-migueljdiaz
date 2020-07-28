@@ -28,32 +28,19 @@ export default function Header() {
 
           <div className="menu-container">
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Nosotros</a></li>
-              <li><a href="#">Contacto</a></li>
+              <li>
+                <Link href="/productos">
+                  <a className={styles.navbarBrand}>Productos</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/contacto">
+                  <a className={styles.navbarBrand}>Contacto</a>
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
-
-        {/* {!isMobile && (
-          <ul className={styles.navbar}>
-            <li className={styles.navItem}>
-              <Link href="/">
-                <a className={styles.navLink}>Productos</a>
-              </Link>
-            </li>
-            <li className={styles.navItem}>
-              <Link href="/">
-                <a className={styles.navLink}>Nosotros</a>
-              </Link>
-            </li>
-            <li className={styles.navItem}>
-              <Link href="/">
-                <a className={styles.navLink}>Contacto</a>
-              </Link>
-            </li>
-          </ul>
-        )} */}
       </Nav>
     </header>
   )
