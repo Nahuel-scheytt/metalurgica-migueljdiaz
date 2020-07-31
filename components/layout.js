@@ -8,7 +8,6 @@ export default function Layout({ children }) {
   return (
     <>
       <Helmet>
-        <meta charSet="utf-8" />
         <link rel="icon" href="/favicon.ico" />
         <title>Metalúrgica Miguel J Diaz en Buenos Aires</title>
         <meta
@@ -20,7 +19,7 @@ export default function Layout({ children }) {
       <Header />
 
       <main>{children}</main>
-      
+
       <Footer />
     </>
   )
