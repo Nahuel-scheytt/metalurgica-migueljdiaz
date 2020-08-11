@@ -4,7 +4,7 @@ import Footer from './footer/footer'
 
 export const siteTitle = 'Next.js Sample Website'
 
-export default function Layout({ children }) {
+export default function Layout({ children, home }) {
   return (
     <>
       <Helmet>
@@ -15,11 +15,8 @@ export default function Layout({ children }) {
           content="Industria Metalúrgica Miguel J Diaz en Villa Domínico, Buenos Aires"
         />
       </Helmet>
-
       <Header />
-
       <main>{children}</main>
-
       <Footer />
     </>
   )
