@@ -1,6 +1,6 @@
 import Layout from '../components/layout'
 import styled from 'styled-components';
-import { makeAbout, makeTitle, makeParagraph } from './mixins'
+import { makeAbout, makeTitle, makeParagraph } from '../components/about/mixins'
 import BannerHome from '../components/banner-home/index'
 
 const About = styled.div`
