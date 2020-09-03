@@ -1,4 +1,4 @@
-export const makeAbout = () => {
+export const makeAboutContainer = () => {
   return `text-align: center;
           margin: 50px 0px;
           display: flex;

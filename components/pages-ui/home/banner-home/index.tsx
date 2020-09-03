@@ -1,4 +1,4 @@
-import { useWindowSize } from '../../hooks/window-size'
+import { useWindowSize } from '../../../../hooks/window-size'
 import { ParallaxBanner } from 'react-scroll-parallax';
 import styled from 'styled-components';
 import { makeParallaxBannerContainer, makeHeading, makeTitle } from './mixins'
